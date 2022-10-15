@@ -1,0 +1,155 @@
+:root{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html {  
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+}
+
+header{
+  display: flex;
+  align-items: center;
+}
+
+header form {  
+  display: flex;
+  flex: 3;
+}
+
+.finder {
+  flex: 3;
+  background-color: #F4F4F4;
+  padding: 10px;
+  margin: 4px;
+}
+
+.navbar-pinterest{
+  height: 30px;
+  width: 30px;
+  border: transparent;  
+  margin: 0 8px;
+  border-radius: 20px;
+}
+
+.pinterest-icon {
+  height: 35px;
+  width: 35px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+
+a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px 10px 10px 10px;  
+  margin: 0 10px;
+  border-bottom: 4px solid transparent;
+}
+
+a:hover, a:active {
+  border-bottom: 4px solid black;
+}
+
+.img_big{
+  border-radius: 20px;
+  width: 180px;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img_small {
+  border-radius: 20px;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+input, select {
+  padding: 16px;
+  border: none;
+  border-radius: 16px;
+}
+
+.movil {
+  display: none;
+}
+
+.inicio,.hoy{
+  padding: 10px;
+  margin: 4px;
+  border-radius: 100px;
+  width: 3rem;
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: rgb(1,1,1);
+  color: white;
+  cursor: pointer;
+}
+
+.crear{
+  padding: 10px;
+  margin: 4px;
+  width: 8rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: rgb(1,1,1);
+  color: white;
+  cursor: pointer;
+}
+
+.img_big {
+  display: flex;
+  flex-flow: column wrap;
+  width: 180px;
+  padding: 10px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.img_big:hover{
+  border: 2px solid black;
+}
+
+.img_small {
+  display: flex;
+  flex-flow: column wrap;
+  width: 180px;
+  padding: 10px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.img_small:hover{
+  border: 2px solid black;
+}
+
+@media (max-width: 60rem) {
+  .movil {
+    display: flex;
+  }
+
+  .inicio{
+    display: none;
+  }
+  .hoy {
+    display: none;
+  }
+  .crear{
+    display: none;
+  }
+}
